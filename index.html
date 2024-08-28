@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Diesel</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="notch" class="notch" onclick="trigger();">
+            <div id="time" onclick="exitapp();">9:41</div>
+            <img id="fullscreen" onclick="fullscreen();" src="settings.png">
+        </div>
+        <main id="main">
+             <!-- Закрываем первый widget -->
+             <div class="widget s2" onclick="changeTheme();">
+                <div class="title">
+                    <img src="p4.svg" class="icon invert">
+                </div>
+            </div> <!-- Закрываем второй widget -->
+            <div class="col">
+                <div class="row">
+                    <div class="widget">
+                        <div class="title">
+                            <img src="heat.png" class="icon invert">
+                        </div>
+                        <div class="content">
+                            <div id="heat" class="texty">20°</div>
+                        </div>
+                    </div> <!-- Закрываем первый widget -->
+                    <div class="widget">
+                        <div class="title">
+                            <img src="p1.png" class="icon invert">
+                            <div class="name">Уровень бензина</div>
+                        </div>
+                        <div class="content">
+                            <div id="diesel" class="name">20 литров доступно</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="widget s1">
+                        <div class="title">
+                            <img src="music.png" class="icon invert">
+                            <div class="name">Музыка</div>
+                        </div>
+                        <div class="content">
+                            <div class="col" style="margin-top: -20px; margin-left: -380px;">
+                                <div class="name" style="margin-left: -20px;">Имя трека</div>
+                                <div class="row" style="margin-top: 10px;">
+                                    <img src="back.png" class="img">
+                                    <img src="pause.png" class="img">
+                                    <img src="next.png" class="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+            <img src="background.jpg" id="background">
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
